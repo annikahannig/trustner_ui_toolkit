@@ -1,0 +1,30 @@
+{
+  "name": "trustner_ui_toolkit",
+  "version": "0.0.0",
+  "description": "Toolkit to easy create Trustner Apps which comply with the Trustner CI.",
+  "homepage": "https://github.com/Trustner/trustner_ui_toolkit",
+  "author": "Trustner GmbH",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Trustner/trustner_ui_toolkit.git"
+  },
+  
+  "bugs": {
+    "url": "https://github.com/Trustner/trustner_ui_toolkit/issues"
+  },
+
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Trustner/trustner_ui_toolkit/blob/master/LICENSE"
+  },
+    
+  "dependencies": {
+    "grunt": "0.4.0",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-uglify": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-less": "0.11.0",
+    "grunt-contrib-watch": "0.6.1"
+  }
+}
