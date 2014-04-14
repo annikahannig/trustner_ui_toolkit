@@ -24,6 +24,7 @@
     "bootswatch": "3.1.1+1",
     "bootstrap": "v3.1.1",
     "jquery": "1.11.0",
+    "roboto-fontface": "latest",
     "fontawesome": "4.0.3",
     "elusive": "aristath/elusive-iconfont#2.0",
     "html5shiv": "latest",
