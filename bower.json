@@ -1,0 +1,32 @@
+{
+  "name": "trustner_ui_toolkit",
+  "version": "0.0.0",
+  "description": "Toolkit to easy create Trustner Apps which comply with the Trustner CI.",
+  "homepage": "https://github.com/Trustner/trustner_ui_toolkit",
+  "author": "Trustner GmbH",
+
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Trustner/trustner_ui_toolkit/blob/master/LICENSE"
+  },
+
+  "private": true,
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+
+  "dependencies": {
+    "bootswatch": "3.1.1+1",
+    "bootstrap": "v3.1.1",
+    "jquery": "1.11.0",
+    "fontawesome": "4.0.3",
+    "elusive": "aristath/elusive-iconfont#2.0",
+    "html5shiv": "latest",
+    "respond": "latest"    
+  }
+}
