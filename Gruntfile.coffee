@@ -23,11 +23,11 @@ module.exports =  (grunt) ->
 
     watch:
       styles:
-        files: ['./less/**/*.less']
+        files: ['./less/*.less']
         tasks: ['less']
 
         options:
-          livereload: true,
+          livereload: true
 
   })
 
