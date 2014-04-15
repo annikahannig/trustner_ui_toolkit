@@ -1,0 +1,108 @@
+/**
+ * Mods of twbs forms.less
+ */
+
+label {
+  font-weight: 400;
+}
+
+.help-block {
+  font-weight: 300;
+}
+
+
+/**
+ * Smaller input fields
+ */
+
+.form-control {  
+  height: @input-height-small; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-small-vertical @padding-small-horizontal;
+  font-size: @font-size-small;
+  line-height: @line-height-small;  
+  border-radius: @border-radius-small;
+}
+
+
+/**
+ * Form control sizing
+ * Build on `.form-control` with modifier classes to decrease or increase the height and font-size of form controls.
+ */
+
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-small);
+}
+
+
+/**
+ * Checkbox & Radio buttons
+ */
+
+.checkbox,
+.radio {
+
+  label {
+    font-weight: 300;
+  }
+}
+
+input[type=radio],
+input[type="checkbox"] {
+  margin: 0;
+  position: relative;
+  font-family: FontAwesome;
+  font-size: 1.25em;
+  color: @gray-light;
+  transition: color 0.5s;
+
+  -webkit-appearance: none;
+
+  &:before {    
+    position: absolute;
+    top: 1px;    
+  }
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:checked {  
+    outline: 0;
+    cursor: pointer;  
+
+    &:before {
+      color: @link-hover-color;
+    }
+  }
+}
+
+// Checkbox
+input[type="checkbox"] {
+
+  &:before {
+    content: "\f096";
+  }
+
+  &:checked {
+    &:before {
+      content: "\f14a";
+    }
+  }
+}
+
+// Radio
+input[type="radio"] {
+
+  &:before {
+    content: "\f10c";
+  }
+
+  &:checked {
+    &:before {
+      content: "\f192";
+    }
+  }
+}
