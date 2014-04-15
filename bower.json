@@ -27,7 +27,7 @@
     "roboto-fontface": "latest",
     "fontawesome": "4.0.3",
     "elusive": "aristath/elusive-iconfont#2.0",
-    "html5shiv": "latest",
-    "respond": "latest"    
+    "html5shiv": "~3.7.0",
+    "respond": "~1.4.2"  
   }
 }
