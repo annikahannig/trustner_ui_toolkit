@@ -1,4 +1,4 @@
-module.exports =  (grunt) ->   
+module.exports =  (grunt) ->
 
   grunt.initConfig({
 
@@ -13,12 +13,12 @@ module.exports =  (grunt) ->
         options:
           targetDir: './vendor'
           layout: 'byComponent'
-          bowerOptions: 
+          bowerOptions:
             production: false
 
     less:
-      style:     
-        files: 
+      style:
+        files:
           './styleguide/stylesheet.css': './less/trustner.less'
 
     watch:
