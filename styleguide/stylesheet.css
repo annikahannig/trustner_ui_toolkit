@@ -3256,15 +3256,15 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 2px 30px;
-  padding: 4px 30px 2px 30px;
+  padding: 7.5px 30px;
+  padding: 9.5px 30px 7.5px 30px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 2px;
 }
 .btn-xl {
-  padding: 3px 45px;
-  padding: 5px 45px 3px 45px;
+  padding: 12.5px 45px;
+  padding: 14.5px 45px 12.5px 45px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 2px;
