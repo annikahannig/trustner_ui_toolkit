@@ -1,5 +1,6 @@
 # Get the dependencies via grunt bower:install  
 vendor/*
+!vendor/.gitkeep
 
 # Generated folders and files
 node_modules
