@@ -8,13 +8,13 @@
 // Navbar =====================================================================
 
 .navbar {
-  border-width: 0;
+  border-width: 1px 1px 3px 1px;
 
   &-default {
 
     .badge {
       background-color: #fff;
-      color: @navbar-default-bg;
+      color: @white;
     }
   }
 
@@ -22,7 +22,7 @@
 
     .badge {
       background-color: #fff;
-      color: @navbar-inverse-bg;
+      color: @white;
     }
   }
 
@@ -207,11 +207,16 @@ input, {
 // Progress bars ==============================================================
 
 .progress {
-  height: 10px;
+  padding: 4px;
+  background-color: transparent;
+  border: 1px solid @gray-outline;
+
+  height: 24px;
   .box-shadow(none);
+
   .progress-bar {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 

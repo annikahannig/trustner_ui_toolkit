@@ -10,17 +10,17 @@
 //## Gray and brand colors for use across Bootstrap.
 
 // Font colors named after purpose
-@link-color:              #3498db;
-@placeholder-color:       #979797;
-@icons-color:             #808080;
-@headings-color:          #666;
-@paragraph-color:         #333;
+@link-color:             #3498db;
+@placeholder-color:      #979797;
+@icons-color:            #808080;
+@headings-color:         #666;
+@paragraph-color:        #333;
 
 // Our grays (and white)
 @white:                 #fff;
 @white-dirty:           #f2f2f2;
 @gray-background:       #e9eaed;
-@gray-outlines:         #d4d4d4;
+@gray-outline:          #d4d4d4;
 @gray-disabled:         #c8c8c8;
 
 // Brand colors
@@ -46,11 +46,10 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            #333;
+@text-color:            @paragraph-color;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
-@link-hover-color:      @brand-default;
+@link-hover-color:      darken(@link-color, 25%);
 
 
 //== Typography
@@ -251,7 +250,7 @@
 @dropdown-header-color:          @text-muted;
 
 // Note: Deprecated @dropdown-caret-color as of v3.1.0
-@dropdown-caret-color:           #000;
+@dropdown-caret-color:           @paragraph-color;
 
 
 //-- Z-index master list
@@ -346,20 +345,20 @@
 // Basics of a navbar
 @navbar-height:                    54px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #777;
-@navbar-default-bg:                @brand-primary;
-@navbar-default-border:            transparent;
+@navbar-default-bg:                @white;
+@navbar-default-border:            @gray-outline;
 
 // Navbar links
-@navbar-default-link-color:                #fff;
-@navbar-default-link-hover-color:          @brand-success;
+@navbar-default-link-color:                @paragraph-color;
+@navbar-default-link-hover-color:          @link-hover-color;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #fff;
+@navbar-default-link-active-color:         @paragraph-color;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 10%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
@@ -387,7 +386,7 @@
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          #fff;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%);
-@navbar-inverse-link-disabled-color:        #ccc;
+@navbar-inverse-link-disabled-color:        @gray-disabled;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
@@ -409,15 +408,15 @@
 @nav-link-padding:                          10px 15px;
 @nav-link-hover-bg:                         @gray-lighter;
 
-@nav-disabled-link-color:                   @gray-light;
-@nav-disabled-link-hover-color:             @gray-light;
+@nav-disabled-link-color:                   @gray-disabled;
+@nav-disabled-link-hover-color:             @gray-disabled;
 
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
-@nav-tabs-border-color:                     @gray-lighter;
+@nav-tabs-border-color:                     @gray-outline;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @gray-outline;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @brand-primary;
@@ -735,7 +734,7 @@
 //
 //##
 
-@well-bg:                     @gray-lighter;
+@well-bg:                     @gray-background;
 @well-border:                 transparent;
 
 
@@ -753,7 +752,7 @@
 //** Badge background color in active nav link
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           400;
+@badge-font-weight:           300;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 
@@ -765,7 +764,7 @@
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-@breadcrumb-bg:                 @gray-lighter;
+@breadcrumb-bg:                 @gray-background;
 //** Breadcrumb text color
 @breadcrumb-color:              #ccc;
 //** Text color of current page in the breadcrumb
@@ -795,7 +794,7 @@
 //
 //##
 
-@close-font-weight:           300;
+@close-font-weight:           500;
 @close-color:                 #000;
 @close-text-shadow:           none;
 
