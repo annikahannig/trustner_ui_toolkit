@@ -3,6 +3,8 @@ Trustner UI toolkit
 This toolkit contains the basic style informations you need to start your own Trustner App. Our styles are based on [Twitter Bootstrap](http://getbootstrap.com) and the Flatly Theme from [Bootswatch](http://bootswatch.com/).
 Visit https://trustner.com for more informations on Trustner.
 
+Please keep in mind that this is **work in progress**. Major details can an will change!
+
 Local deployment
 ----------------
 1. Clone the repository.
