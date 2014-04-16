@@ -5,6 +5,11 @@ Visit https://trustner.com for more informations on Trustner.
 
 Please keep in mind that this is **work in progress**. Major details can an will change!
 
+Browser compatibility
+---------------------
+
+The Trustner Client which presents the contents of the Trustner to the user uses **QtWebKit**. For this reason the display in other Browser may not be as it should.
+
 Local deployment
 ----------------
 1. Clone the repository.
