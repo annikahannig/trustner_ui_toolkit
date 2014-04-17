@@ -8,7 +8,7 @@ Please keep in mind that this is **work in progress**. Major details can an will
 Browser compatibility
 ---------------------
 
-The Trustner Client which presents the contents of the Trustner to the user uses **QtWebKit**. For this reason the display in other Browser may not be as it should.
+The Trustner Client which presents the contents of the Trustner to the user uses [**QtWebKit**](http://trac.webkit.org/wiki/QtWebKit). For this reason the display in other Browsers may vary.
 
 Local deployment
 ----------------
