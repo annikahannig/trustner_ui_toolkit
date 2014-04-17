@@ -297,10 +297,17 @@
 @screen-lg-min:              @screen-lg;
 @screen-lg-desktop:          @screen-lg-min;
 
+// Big screen // Full HD
+@screen-xlg:                  1900px;
+@screen-xlg-min:              @screen-xlg;
+@screen-xlg-desktop:          @screen-xlg-min;
+
 // So media queries don't overlap when required, provide a maximum
 @screen-xs-max:              (@screen-sm-min - 1);
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
+@screen-lg-max:              (@screen-xlg-min - 1);
+@screen-xlg-max:             90%;
 
 
 //== Grid system
@@ -336,6 +343,11 @@
 @container-large-desktop:      ((1140px + @grid-gutter-width));
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
+
+// Large screen / wide desktop
+@container-xlarge-desktop:      ((1840px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-xlg:                 @container-xlarge-desktop;
 
 
 //== Navbar
@@ -633,7 +645,7 @@
 //##
 
 //** Background color of the whole progress component
-@progress-bg:                 @gray-lighter;
+@progress-bg:                 @gray-background;
 //** Progress bar text color
 @progress-bar-color:          #fff;
 
@@ -656,12 +668,12 @@
 //** Background color on `.list-group-item`
 @list-group-bg:                 #fff;
 //** `.list-group-item` border color
-@list-group-border:             @gray-lighter;
+@list-group-border:             @gray-background;
 //** List group border radius
 @list-group-border-radius:      @border-radius-base;
 
 //** Background color of single list elements on hover
-@list-group-hover-bg:           @gray-lighter;
+@list-group-hover-bg:           @gray-background;
 //** Text color of active list elements
 @list-group-active-color:       @component-active-color;
 //** Background color of active list elements
