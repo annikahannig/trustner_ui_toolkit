@@ -17,3 +17,7 @@ Local deployment
 3. Run `grunt bower:install` to get all the needed third party libraries.
 
 If you are going to edit the less files in the less directory use the `grunt` command to keep the static stylesheets up to date.
+
+Wiki
+----
+More info can be found in the [wiki](https://github.com/Trustner/trustner_ui_toolkit/wiki). It will be extended successively.
