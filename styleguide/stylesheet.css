@@ -22,6 +22,14 @@
 /**
  * Button sizes
  */
+/**
+ * Add ellipsis to some content
+ */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6413,4 +6421,4 @@ input:focus {
     display: none !important;
   }
 }
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=./styleguide/stylesheet.css.map */
