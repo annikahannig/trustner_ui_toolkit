@@ -23,11 +23,16 @@
   "dependencies": {
     "bootswatch": "3.1.1+1",
     "bootstrap": "v3.1.1",
-    "jquery": "1.11.0",
     "roboto-fontface": "latest",
     "fontawesome": "4.0.3",
     "elusive": "aristath/elusive-iconfont#2.0",
-    "html5shiv": "~3.7.0",
-    "respond": "~1.4.2"  
+    "html5shiv": "3.7.1",
+    "respond": "1.4.2",
+    "jquery": "1.11.0",
+    "jquery-ui": "1.10.4",
+    "jquery-autogrow": "latest",
+    "jquery-smartresize": "latest",
+    "jquery.smooth-scroll": "latest",
+    "jquery.debouncedresize": "latest"
   }
 }
