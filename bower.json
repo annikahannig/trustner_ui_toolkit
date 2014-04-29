@@ -1,6 +1,6 @@
 {
   "name": "trustner_ui_toolkit",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Toolkit to easy create Trustner Apps which comply with the Trustner CI.",
   "homepage": "https://github.com/Trustner/trustner_ui_toolkit",
   "author": "Trustner GmbH",
