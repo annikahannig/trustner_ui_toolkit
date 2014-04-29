@@ -14,7 +14,7 @@ module.exports =  (grunt) ->
           targetDir: './vendor'
           layout: 'byComponent'
           bowerOptions:
-            production: false
+            production: true
 
     less:
       style:
