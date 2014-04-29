@@ -3,6 +3,8 @@
 @import "../vendor/roboto-fontface/roboto-fontface.css";
 /**
  * Trustner UI includes
+ *
+ * @todo Include the bootstrap bower components somewhat smarter
  */
 /**
  * Import fonts
@@ -29,6 +31,17 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+/**
+ * Rounded box
+ */
+.box {
+  background: white;
+  border: 1px solid #d4d4d4;
+}
+.box h2,
+.box h3 {
+  margin-top: 0;
 }
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
