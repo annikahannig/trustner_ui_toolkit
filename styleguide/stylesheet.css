@@ -1,6 +1,6 @@
-@import "../vendor/elusive/elusive-webfont.css";
-@import "../vendor/fontawesome/css/font-awesome.min.css";
-@import "../vendor/roboto-fontface/roboto-fontface.css";
+@import "../bower_components/elusive/css/elusive-webfont.css";
+@import "../bower_components/fontawesome/css/font-awesome.min.css";
+@import "../bower_components/roboto-fontface/roboto-fontface.css";
 /**
  * Trustner UI includes
  *
