@@ -22,10 +22,7 @@
 
   "dependencies": {
     "bootswatch": "3.1.1+1",
-    "bootstrap": "v3.1.1",
-    "roboto-fontface": "latest",
-    "fontawesome": "4.0.3",
-    "elusive": "aristath/elusive-iconfont#2.0",
+    "bootstrap": "v3.1.1",    
     "html5shiv": "3.7.1",
     "respond": "1.4.2",
     "jquery": "1.11.0",
