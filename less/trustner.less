@@ -9,9 +9,61 @@
  * Import fonts
  */
 
+// Elusive
+// Override font inclusion as url paramters are messing with rails
 @import "../bower_components/elusive/less/elusive-webfont.less";
+@font-face { 
+  font-family: 'Elusive-Icons';
+  src:  url('../fonts/Elusive-Icons.eot');
+  src:  url('../fonts/Elusive-Icons.eot') format('embedded-opentype'),
+        url('../fonts/Elusive-Icons.svg') format('svg'),
+        url('../fonts/Elusive-Icons.woff') format('woff'),
+        url('../fonts/Elusive-Icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Font Awesome
+// Same as above
 @import "../bower_components/fontawesome/less/font-awesome.less";
-@import "../bower_components/roboto-fontface/roboto-fontface.less"; // Seee font-weights here: https://www.google.com/fonts/specimen/Roboto
+@font-face {
+  font-family: 'FontAwesome';
+  src:  url('../fonts/fontawesome-webfont.eot');
+  src:  url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Roboto
+// Seee font-weights here: https://www.google.com/fonts/specimen/Roboto
+.roboto-font(@type, @weight, @style) {
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-@{type}.eot');
+    src: url('font/Roboto-@{type}.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-@{type}.woff') format('woff'),
+         url('font/Roboto-@{type}.ttf') format('truetype'),
+         url('font/Roboto-@{type}.svg#Roboto') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.roboto-font-pair(@type, @weight) {
+  .roboto-font('@{type}', @weight, normal);
+  .roboto-font('@{type}Italic', @weight, italic);
+}
+
+.roboto-font-pair(Thin, 100);
+.roboto-font-pair(Light, 300);
+.roboto-font-pair(Regular, 400);
+.roboto-font-pair(Medium, 500);
+.roboto-font-pair(Bold, 700);
+.roboto-font-pair(Black, 900);
 
 
 /**
