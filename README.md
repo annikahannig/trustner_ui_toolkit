@@ -5,6 +5,8 @@ Visit https://trustner.com for more informations on Trustner.
 
 Please keep in mind that this is **work in progress**. Major details can an will change!
 
+Currently there is no dist directory. There will be one soon.
+
 Browser compatibility
 ---------------------
 
