@@ -79,6 +79,20 @@
   .button-variant( @btn-default-color; @brand-danger; @brand-danger );
 }
 
+.btn-white {
+  .button-variant( @text-color; @gray-outline; @gray-outline );
+  color: @text-color;
+  background-color: @white;
+  border: 1px solid @gray-outline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom-width: 2px;
+    padding-top: 2px;
+  }
+}
+
 
 // Link buttons
 // -------------------------
