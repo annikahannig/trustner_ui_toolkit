@@ -38,7 +38,7 @@
   &.active {
     outline: 0;
     background-image: none;
-    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    //.box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
 
   &.disabled,
@@ -82,15 +82,7 @@
 .btn-white {
   .button-variant( @text-color; @gray-outline; @gray-outline );
   color: @text-color;
-  background-color: @white;
-  border: 1px solid @gray-outline;
-
-  &:hover,
-  &:active,
-  &:focus {
-    border-bottom-width: 2px;
-    padding-top: 2px;
-  }
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 
