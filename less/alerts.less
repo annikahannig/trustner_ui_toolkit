@@ -2,6 +2,18 @@
  * Alert mods
  */
 
+
+@alert-font-weight: 400;
+
 .alert {
-  font-weight: 300; // Somewhee the font-weight is set to height
+  font-weight: @alert-font-weight;
+
+  h1, 
+  h2, 
+  h3, 
+  h4,
+  p,
+  .alert-link {
+    font-weight: @alert-font-weight;
+  }
 }
