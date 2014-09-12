@@ -20,7 +20,7 @@ module.exports =  (grunt) ->
       style:
         files:
           './styleguide/stylesheet.css': './less/trustner.less'
-      options: 
+      options:
         sourceMap: true
       
     watch:
